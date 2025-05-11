@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho" >
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Meus Favoritos</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#video-games" class="nav-link">
+                            <i class="bi bi-controller me-1"></i>
+                            Video Games
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#jogos" class="nav-link">
+                            <i class="bi bi-star me-1"></i>
+                            Jogos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-dots me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carrossel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img class="img-carrossel" src="./imagem/imagem_2024-07-11_170455174-1920x1080_768x432 (1).png" alt="Nintendo 64">
+                    </div>
+                    <div  class="carousel-item" data-bs-interval="4000">
+                        <img class="img-carrossel" src="https://gmedia.playstation.com/is/image/SIEPDC/ps1-console-image-block-01-en-02oct24?$1600px--t$" alt="Playstation 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img class="img-carrossel" src="https://p.turbosquid.com/ts-thumb/Rj/GaeLFw/SR/persp1/jpg/1681210050/3840x2160/fit_q99/a4d6d4c5ef5e401207f15807467f3a5e479fb5af/persp1.jpg" alt="Mega Drive">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">               
+                    <button class="active" type="button" data-bs-target="#carrossel" data-bs-slide-to="0" ></button>
+                    <button  type="button" data-bs-target="#carrossel" data-bs-slide-to="1" ></button>
+                    <button  type="button" data-bs-target="#carrossel" data-bs-slide-to="2" ></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./imagem/toad_408x270.jpeg" class="d-block w-100 rounded border" alt="Toad">
+                        </div>
+                        <div class="col-md-7 mt-md-8">
+                            <h2 class="section-title">Sobre <span class="text-colored">Video Games</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut alias nulla ducimus labore debitis nihil natus ipsum reprehenderit cum libero eius dolorum autem, fuga minus cupiditate ullam ratione blanditiis porro!
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="bi bi-nintendo-switch"></i>
+                                    Nintendo
+                                </li>
+                                <li>
+                                    <i class="bi bi-playstation"></i>
+                                    Playstation
+                                </li>
+                                <li>
+                                    <i class="bi bi-joystick"></i>
+                                    Sega
+                                </li>
+                            </ul>
+                            <h3 class="section-title">Sobre <span class="text-colored">Jogos</span></h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius obcaecati, aut odit alias id hic nemo et repudiandae repellat at, dolores commodi autem dolore itaque? Vel architecto excepturi impedit accusamus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="video-games" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row mt-2">
+                    <h2 class="section-title text-center pb-5">Linha do tempo dos <span class="text-colored">Video Games</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./imagem/switch.webp" alt="" class="d-block w-100 rounded border h-50 mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-nintendo-switch"></i>
+                            Nintendo
+                        </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe fugit magni ipsum impedit sit cumque quasi libero consequuntur molestiae. Nobis consequuntur sequi unde a suscipit ea veniam, eveniet illum dicta.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./imagem/ps5.webp" alt="" class="d-block w-100 rounded border h-50 mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-playstation"></i>
+                            Playstation
+                        </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe fugit magni ipsum impedit sit cumque quasi libero consequuntur molestiae. Nobis consequuntur sequi unde a suscipit ea veniam, eveniet illum dicta.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./imagem/dreamcast.jpg" alt="" class="d-block w-100 rounded border h-50 mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-joystick"></i>
+                            Sega
+                        </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe fugit magni ipsum impedit sit cumque quasi libero consequuntur molestiae. Nobis consequuntur sequi unde a suscipit ea veniam, eveniet illum dicta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="jogos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row mt-2">
+                    <h2 class="section-title text-center pb-5">
+                        Linha do tempo dos <span class="text-colored">Jogos</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-jogos">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#jogos-nintendo" class="fw-bold text-start nav-link text-colored active">Nintendo</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#jogos-playstation" class="fw-bold text-start nav-link text-colored">Playstation</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#jogos-sega" class="fw-bold text-start nav-link text-colored">Sega</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="jogos-nintendo">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://t.ctcdn.com.br/Trd22MhJwycqXEb5m24nM5TYVm8=/1024x576/smart/i487807.jpeg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Mario Kart</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/a/AVvXsEgWBjLvf9XAEqDjupunJcDUHVG3bytQzyJyAfk4FBFyZWTew9cGIoRqQEBu-Z91MFOHW1OWojqWLMuM56t4ns1wt8kfp80xSu7V0PkLiPM9S4kPTN4EcTj2F9nsErbtu-OoYUvwdMZfZnUbnSQxRcZAgbtsuM4Q8BzfHC2GXx26iXrHeg49kYsofhXk=s1089" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Mario Party</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq_vj2kX7-_WXw3N77547ozDRmTbw-alwQxAS3q4Oyf9UI6Kjy9TWvpX8s4s5q0quH_C0ouTqDeeNiALdWFSATcS-KyeWZ49erSbSSbb9cro7xLkojk3BvrAPPl8NE-qLqVEW0eNnvq1cw/s1600/ssb.png" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Super Smash Bros</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEig3E6oBuHuUO4LaxqsvX9io7ZzTRbrW-mnBFS0BOcJtZel8E_GIzrP2FK_ueLoH8ndecYXlen_zb08sNF_xq3r-sOIFagnidOx63L-emADiGxDd3qezYcrFMDwH-5lbI8QY0APuFdUDnuf/s1600/bdc077c8b4bbbd099eeb421963c7f90d_3jtp.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Super Mario </h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4rjc5H_jLSgL-MjZ2IIRSZfVs6SRAf65djMBf8R3rqk9D8rm3NmPmEH_L4VTFv596k_XZT24rdANhblWXAAn20LRmyWhtoFoeZqD8rs78XMVwm848h_ek9sK74LYY5Fd3ak5erJePDCk0/s1600/MajorasMaskDiegomigueisNintendoblast.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">The Legend of Zelda</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_j5IGrwCAH_Svgih723lKHEFpPXZZS3BsnIlVPq131j2Cz1Sjzrx9oGOSPPAv1nnLszeNSMjfgwJZgemyvrPaRYQzMEn8PSZackSxkJNL4A5hxyGNHDgkG8L-aRXMI8C2vhv4ZtSqJ0JE-eF5Id1Lw24miQWiaJ3RSYkwXTeaDIzUuVCAHuzRZX-jbw/s1280/kirbys-return-to-dream-land-deluxe-capa.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Kirby</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="jogos-playstation">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikCv28d8d741Y0eFG3TiLRoMvsJwlTO-K0lIXfXe1Nffmyo5AW4fyIgZ6H_1nAU38YHoY1AiR0XiKUWS88xgTihKLj9N56v6uAD98AzYFD5gvVOVr3zOTLlGcNBpaoEsInnDtcGaU_Aya1RaNQy0p0OU-_AAMITZ0V-DOoIIOB-gh5LWLGHFr1mXbEsSA/s1280/pepsiman-gameplay.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Pepsi Man</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1gXhYBTiv8whMqlcgbtSi-iegWR0IECT6VdLZo8wFfARvvZR0g52pBqiAOeMcN_9Age0BHzav1MrMpYI2o0ZuJ-6Fjfq7DZLf8ju53IrOTxD4jJb0XRqFJ_2aLxWASjhoEhHgBZU0ZbjE/s1600/capa2.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Gta</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJwyYOTuv6bMgerRzwjoNciO4sYHeGB_lnRJCRBhSyO6CGxLMmoYKj7OLhMOp3W2egvJIKzfAqwa-Ivb62VZVN-PfwQkZtpnhZHmrCYh-CObx05XTEeguY16noL2YPek7i6kbwosjuhn2j/s1600/capa.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Need for Speed</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO6wBiZKEko3f1tZzinYQUSe3V_7IUlZfb8pmCRLSpzDKsw-JflNActUQw5kG9Sl9bHh0kOKehKEInGaLKQB9n4JEaqBF-ToqUpP94HvlLcCdn4ryrSw9A2gmMPGbH8Wz_xbTg8VxRdAyTgYhHU5P3vD3eSfi9TnCNXoIgYmEzCp97gvjFpJQP8FrTGQ/s3840/witcher%203%20complete%20edition.png" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">The Witcher</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_XCo5uCRGFqrRd-VTSx_bkuoSiGU2TN4RH-3emH2Dm7LprrddP7zRm-Qy9O1dlCGzAlcEGsXsZtt69lleCNjWt8ZhdWDD3tqEaZCTJmJC1twXGDGhuyw0_z1CsVJLDjgCjIWRh62hSuIC/s1600/290122-alexfas01.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Red Dead Redemption</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/a/AVvXsEhqIgGgZXm05OXhSCu2eV-3zzDCZx07oTgUpWwCVyFEKH--D8lxPZRVh_7duUK1sZ23DLalgO5m_3hHHZul-RDwJD17oMmnYR9Qfh2yjHOWGh8r5wlXidPzXH-PY4G2iMkSd02V_9t6kS0GeYdroxKyiExL82tQ0wHpUcDntHkwkVL2O_myokB2XLgpIZE" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Homem Aranha</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="jogos-sega">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwqWM8ZWI1Ji6Olc3jLCwZqOx7cZdY-IbMTbnl0X2We61z46sgHYqkVpyOwx06sjoSbMPkX6sVcJkg9SQT5TjFi7S7I2Vm9E_eft5HqJSInKTnIkLWic_9pPFNGxbJo83c-eDkG27BOQzqLp9jVg2tQhsX1EWQdTacfItAeZmA21BhIRZAxbnYPRxIamAN/s1920/sonic-superstars-capa.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Sonic</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXEt1wr7TmB_4Y4Z1Gn1ILJX7Y1Ah0Rfx5stW-k4I0jeGxWmGkrYWzMvlojMh9h7872cKPsGYvGHSTWfL3fwwVKXELf6--7yH4FziVYOqtB36AJ69amPJFUROAU75TgHlw9BZGnfHOJpsUyXYTTyPxxoRmg7uupgD8A4_q7oK1wH-7S0deUrJbVlf_4w/s1200/teenage-mutant-ninja-turtles-shredders-revenge-capa.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Tartarugas Ninja</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOt9fsIe8Qi0a7DoyA92HKRv_W4YBYwB-Zv7LvkedDVkz4-GK8MDC3YDy2s0cRToYTO7DIQPlT5LKGf0orD2rP_xn-BRb7ojs5kS9bnj8b60Z0gHzLSUt786DiuvTbhLLx4W2oZhuKRqHxMay0h7C57SYstrX83Dp9lhgnz4EY-K_txS2tJPzt6J3SkBk/s1920/pr3-capa.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Power Ranger</h5>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored section-title">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored section-title">Seu email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored section-title">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored section-title">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn mt-1 mb-4 fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-twitter text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Ubatuba teste
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
