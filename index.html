@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Bootstrap avançado</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+            background-color: darkgreen;
+        }
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            background-color: #ccc;
+            padding-top: 70px;
+            border-bottom: 5px solid darkgreen;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: lightgreen;
+            border-bottom: 5px solid darkgreen;
+            z-index: 999;
+        }
+
+        .carousel-caption {
+            color: #fff;
+            font-weight: 900;
+        }
+
+        img.d-block {
+        height: 300px; /* height of container */
+        object-fit: cover;
+        border: 5px solid black;
+        }
+
+        .conteudo {
+            display: grid;
+            grid-template-columns: repeat(3,32.6%);
+            column-gap: 1%;
+            row-gap: 5%;
+        }
+
+        @media screen and (max-width: 767px) {
+            .conteudo {
+                display: block;
+        }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .conteudo {
+            display: grid;
+            grid-template-columns: repeat(2,49.5%);
+            column-gap: 1%;
+            row-gap: 5%;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Melhor</h1>
+                <button type="button" class="navbar toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#personagens">Personagens</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">    
+        <div id="carrossel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3500" class="carousel-item active">
+                    <img class ="d-block w-100 banner" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPjWbNpBMSuNutRUT2q1Nn9yf5DVTL_CMyApNxB6FEFz5VIhklrsGjlQ3J5n014W6jIjfQNDqgqyNdXf5OuB-1Ow_Tg6OyPC8iy563FT55u83OtmWrrqdA2jAkMG0157xMirLr2wIja4k1/s1600/Super_Smash_Bros_N64_box.png">
+                    <div class="carousel-caption">
+                        <h2>Super Smash Bros - Nintendo 64</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3500" class="carousel-item">
+                    <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL7VMdkrfgCWlmAP9S_uuhSmb56Cd_4k6G0eR4C5MIW-0wPKADje-1QyayT0h2L08NweUDOBuM32bRYG7OMw1s6WrtkscFD5XR9Mm9wgEXTsBIWUehRgH4OJAwreXFK-d5x_aZgU_GkaRL/s1600/Super+Smash+Bros+Melee+GC+Nintendo+Blast.jpg">
+                    <div class="carousel-caption">
+                        <h2>Super Smash Bros Melee - Game Cube</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3500" class="carousel-item">
+                    <img class="d-block w-100" src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/software/switch/70010000012332/ac4d1fc9824876ce756406f0525d50c57ded4b2a666f6dfe40a6ac5c3563fad9">
+                    <div class="carousel-caption">
+                        <h2>Super Smash Bros Ultimate - Nintendo Switch</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carrossel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button data-bs-target="#carrossel" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#carrossel" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>Início</h2>
+            <h3> A franquia Super Smash Bros para mim é o melhor jogo já feito, dentro dele temos diversas franquias, trazendo uma infinidade de personagens,
+                mapas, itens, musicas entre outros... o modo online ainda é meio atrasado não tendo modo competitivo e sendo meio lagado, mas para jogar com
+                amigos, não há outro melhor, dentro dele tem estatisticas de tudo para saber quem é o melhor player.
+            </h3>
+        </section>
+        <section id="personagens">
+            <h2>Personagens</h2>
+            <div class="container">
+                <div class="row conteudo">
+                    <article>
+                        <div class="col-4">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    <h3>Luigi</h2>
+                                </div>
+                                <img src="https://www.smashbros.com/wiiu-3ds/images/character/luigi/main.png">
+                                <div class="card-body">
+                                    <h5>Super Mario</h4>
+                                </div>
+                                <a href="#" class="btn btn-success">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </article>               
+                    <article>
+                        <div class="col-4">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    <h3>Lucas</h2>
+                                </div>
+                                <img id="lucas" src="https://www.smashbros.com/wiiu-3ds/images/character/lucas/main.png">
+                                <div class="card-body">
+                                    <h5>Earth Bound</h4>
+                                </div>
+                                <a href="#" class="btn btn-success">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="col-4">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    <h3>Diddy Kong</h2>
+                                </div>
+                                <img src="https://www.smashbros.com/wiiu-3ds/images/character/diddy_kong/main.png">
+                                <div class="card-body">
+                                    <h5>Donkey Kong</h4>
+                                </div>
+                                <a href="#" class="btn btn-success">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="col-4">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    <h3>Yoshi</h2>
+                                </div>
+                                <img src="https://www.smashbros.com/wiiu-3ds/images/character/yoshi/main.png">
+                                <div class="card-body">
+                                    <h5>Yoshi Island</h4>
+                                </div>
+                                <a href="#" class="btn btn-success">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+<script src="./lib/bootstrap.bundle.min.js"></script>
+</html>
