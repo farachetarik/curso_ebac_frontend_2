@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #74eb96;
+    --primary-hover: #5ac87d;
+    --background-gradient: linear-gradient(135deg, #74eb84, #acb6e5);
+    --text-color: #333;
+    --border-color: #ddd;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --focus-shadow-color: rgba(116, 235, 213, 0.5);
+    --modal-header-color: white;
+}
+
+.container {
+    width: 80vh;
+}
+
+.post,h2 {
+    margin-bottom: 4vh;
+}
+
+body {
+    background: var(--background-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
