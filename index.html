@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/agendaIcone.png" alt="Icone da agenda">
+            <h1>Agenda de Contatos</h1>
+        </header> 
+        <form id="form-atividade">
+            <input type="text" id="nome-completo" required placeholder="Nome Completo" />
+            <div class="numero-telefone"> <input type="number" id="ddd-telefone" required placeholder="DDD" min="10" max="99" />
+            <input type="number" id="numero-telefone" required placeholder="Telefone" min="100000000" max="999999999"/></div>
+            <input type="email" id="email" required placeholder="E-mail"/>
+            <button type="submit">Cadastrar +</button>
+        </form> 
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome Completo
+                    </th>
+                    <th>
+                        Telefone
+                    </th>
+                    <th>
+                        E-mail   
+                    </th>
+                    <th>
+                        
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
