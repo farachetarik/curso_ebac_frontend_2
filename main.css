@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid red;
+    margin-bottom: 56px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav li {
+    display: flex;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+.menu :hover {
+    color: red;
+    font-size: 20px;
+    align-items: center;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 100%;
+}
+
+.destaque {
+    margin-bottom: 56px;
+}
+
+.destaque .sobre-a-loja a {
+display: flex;
+font-size: 2em;
+text-decoration: none;
+}
+
+.destaque .sobre-a-loja img {
+    margin-right: 8px;
+}
+
+section h2 {
+    margin-bottom: 32px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+
+.imagem-loja, .imagem-produto {
+    padding: 16px;
+    width: 320px;
+    height: 320px;
+    object-fit: cover; 
+}
+
+@media screen and (max-width: 1024px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+    
+    .destaque .sobre-a-loja a {
+    display: block;
+    font-size: 1.5em;
+    }
+    
+    .destaque .sobre-a-loja img {
+        margin-right: 0;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos .produto {
+        margin-bottom: 32px;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .menu :hover {
+        color: white;
+        font-size: 18px;
+    }
+}
+
+    @media screen and (max-width: 640px) {
+        .produtos {
+            grid-template-columns: 1fr;
+        }
+    
+        .imagem-loja, .destaque {
+            width: 100%;
+            height: auto;
+        }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja do Boo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="titulo-site" >Loja do Booooo</h1>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#sobre">Sobre a Loja</a>
+                    </li>
+                    <li>
+                        <a href="#produtos" id="produtos-boo">Produtos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="container destaque">
+                <h2> Sobre a Loja</h2>
+                <article class="sobre-a-loja">
+                    <a href="">
+                        <img class="imagem-loja" src="./img/booprofile.png" alt="imagem da loja"/>
+                        <h3>
+                            A lojinha do Boo, a loja com mais requisitada no mundo dos cogumelos onde a sobrevivência não é facil.
+                        </h3>
+                    </a>
+                </article>
+            </section >
+            <section class="container" id="lojinha">
+                <h2>Produtos do Boo</h2>
+                <div class="produtos">
+                    <article class="produto">
+                        <a href="">
+                            <img class="imagem-produto" src="./img/fire_flower.webp" alt="Fire Flower"/>
+                            <h3>
+                                Fire Flower
+                            </h3>
+                            <p>
+                                Uma planta de fogo, ao consumir você ganha poderes de fogo.
+                            </p>
+                            <p>
+                                <strong>R$ 54,00</strong>
+                            </p>
+                            <button type="button" class="add-to-cart" data-product-name="Fire Flower">Adicionar ao carrinho</button>
+                        </a>
+                    </article>
+                    <article class="produto">
+                        <a href="">
+                            <img class="imagem-produto" src="./img/casco-verde.jpg" alt="Casco Verde"/>
+                            <h3>
+                                Casco Verde
+                            </h3>
+                            <p>
+                                Utilizado como uma arma, o casco verde permite atordoar um adversário (tem que ter boa mira).
+                            </p>
+                            <p>
+                                <strong>R$ 25,00</strong>
+                            </p>
+                            <button type="button" class="add-to-cart" data-product-name="Casco Verde">Adicionar ao carrinho</button>
+                        </a>
+                    </article>
+                    <article class="produto">
+                        <a href="">
+                            <img class="imagem-produto" src="./img/casco-vermelho.webp" alt="Casco Vermelho"/>
+                            <h3>
+                                Casco Vermelho
+                            </h3>
+                            <p>
+                                Parecido com o casco verde, só que ele persegue seu inimigo não precisando ter uma boa mira.
+                            </p>
+                            <p>
+                                <strong>R$ 74,00</strong>
+                            </p>
+                            <button type="button" class="add-to-cart" data-product-name="Casco Vermelho">Adicionar ao carrinho</button>
+                        </a>
+                    </article>
+                    <article class="produto">
+                        <a href="">
+                            <img class="imagem-produto" src="./img/chapeu_voador.png" alt="Chapéu Voador"/>
+                            <h3>
+                                Chapéu Voador
+                            </h3>
+                            <p>
+                                Permite voar livremente, mas por tempo limitado, necessitando restaurar energia do chapéu para utilizar novamente.
+                            </p>
+                            <p>
+                                <strong>R$ 154,00</strong>
+                            </p>
+                            <button type="button" class="add-to-cart" data-product-name="Chapéu Voador">Adicionar ao carrinho</button>
+                        </a>
+                    </article>
+                </div>
+                <script src="./main.js"></script>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
