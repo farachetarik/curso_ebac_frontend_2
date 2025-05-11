@@ -1,0 +1,77 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(135, 0, 0);
+}
+
+#cabecalho .nav .nav-link.active {
+background-color: #ccc;
+color: rgb(135, 0, 0);
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-jogos .nav-link.active:hover {
+    color: #ccc;
+}
+
+                
+.navbar-toggler {
+    background-color: #ccc;
+}
+
+.img-carrossel {
+    width: 100%;
+    height: 600px;
+    background-color: #f5f1f1ca;
+}
+
+.carousel-indicators {
+    color: black;
+    background-color: black;
+}
+
+.section-title {
+    font-family: Sour Gummy, sans-serif;
+}
+
+#video-games {
+    background-color: #ffeded;
+}
+
+#sobre,
+#jogos {
+    background-color: rgb(255, 200, 200);
+}
+
+.text-colored {
+    color: rgb(135, 0, 0);
+}
+
+.nav-jogos .nav-link.active,
+#fale-conosco button {
+    background-color: rgb(135, 0, 0);
+    color: #ccc;
+}
+
+.nav-jogos .nav-link:hover {
+    color: rgb(135, 0, 0);
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
